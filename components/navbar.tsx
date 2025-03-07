@@ -47,7 +47,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {["Home", "About", "Experience", "Education", "Skills", "Projects", "Contact"].map((item) => (
+            {["Home", "About", "Experience", "Education",  "Projects", "Contact"].map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
