@@ -5,6 +5,10 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
+import Image from "next/image"
+import LiferayRound from "../public/LiferayRound.jpeg"
+import GlobalsuiteRound from "../public/GlobalsuiteRound.jpeg"
+import UCLMRound from "../public/UCLMRound.png"
 
 interface ExperienceItem {
   title: string
@@ -13,7 +17,7 @@ interface ExperienceItem {
   period: string
   description: string
   skills: string[]
-  logo: string
+  logo: any
 }
 
 export default function Experience() {
@@ -45,7 +49,7 @@ export default function Experience() {
           "Testing",
           "TypeScript"
         ],
-        logo: "/LiferayRound.jpeg?height=80&width=80",
+        logo: LiferayRound,
     },
     {
       title: "Database administrator",
@@ -70,7 +74,7 @@ export default function Experience() {
         "React",
         "REST APIs"
       ],
-      logo: "/GlobalsuiteRound.jpeg?height=80&width=80",
+      logo: GlobalsuiteRound,
     },
     {
       title: "Research Assistant",
@@ -82,7 +86,7 @@ export default function Experience() {
         infrastructure from where the project would be constructed. Valuable experience as it was my first \
         experience with senior people on the team and they congrated me for my job.",
       skills: ["Ethereum", "Solidity", "Truffle", "MetaMask"],
-      logo: "/UCLMRound.png?height=80&width=80",
+      logo: UCLMRound,
     }
   ]
 
@@ -166,7 +170,11 @@ export default function Experience() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden flex-shrink-0">
-                  <img src={exp.logo || "/placeholder.svg"} alt={exp.company} className="w-8 h-8 object-contain" />
+                  <Image src={exp.logo || "/placeholder.svg"}
+                    width={80}
+                    height={80}
+                    alt={exp.company}
+                    className="w-8 h-8 object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold">{exp.title}</h3>

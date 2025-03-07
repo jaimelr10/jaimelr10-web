@@ -8,11 +8,17 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { ExternalLink, Github } from "lucide-react"
+import LiferayLogo from "../public/LiferayLogo.png"
+import GlobalSuiteLogo from "../public/GlobalSuiteLogo.jpg"
+import MarcadorDeChapas from "../public/MarcadorDeChapas.png"
+import WarBotApp from "../public/WarbotApp.png"
+import PortfolioWeb from "../public/portfolioWeb.png"
+import FinancialCalculator from "../public/financialCalculator.png"
 
 interface Project {
   title: string
   description: string
-  image: string
+  image: any
   tags: string[]
   demoUrl?: string
   githubUrl?: string
@@ -25,7 +31,7 @@ export default function Projects() {
     {
       title: "Liferay",
       description: "Contributions to the open-source repo of the DXP Platform.",
-      image: "/LiferayLogo.png?height=400&width=600",
+      image: LiferayLogo,
       tags: ["Java", "JSP", "REST API Infrastructure", "React", "Playwright"],
       demoUrl: "https://www.liferay.com/es/",
       githubUrl: "https://github.com/jaimelr10/liferay-portal",
@@ -33,26 +39,26 @@ export default function Projects() {
     {
       title: "Cronos",
       description: "ETL infrastructure to process and analyze data from different sources and generate reports.",
-      image: "/GlobalSuiteLogo.jpg?height=400&width=600",
+      image: GlobalSuiteLogo,
       tags: ["React", "PHP", "Laravel", "MariaDB", "MongoDB", "AWS", "PowerBI"],
     },
     {
       title: "Marcador de Fútbol Chapas",
       description: "An useful scoreboard personalized for one of my hobbies, Bottlecap football, with more than 300 downloads on Google Play.",
-      image: "/MarcadorDeChapas.png?height=40&width=60",
+      image: MarcadorDeChapas,
       tags: ["Android", "React Native"],
       demoUrl: "https://play.google.com/store/apps/details?id=com.marcadorchapas&hl=es",
     },
     {
       title: "WarBot App",
       description: "A funny game to simulate a war between groups of friends using the Twitter API to post the results. Around 1.900 downloads on Google Play. (Discontinued due to the name)",
-      image: "/WarbotApp.png?height=400&width=600",
+      image: WarBotApp,
       tags: ["Android", "Java", "Twitter API"],
     },
     {
       title: "Portfolio Website",
       description: "A responsive portfolio website with smooth animations using GSAP and React.",
-      image: "/portfolioWeb.png?height=400&width=600",
+      image: PortfolioWeb,
       tags: ["React", "GSAP", "Tailwind CSS", "TypeScript"],
       demoUrl: "https://jaimelr10.github.io/",
       githubUrl: "https://github.com/jaimelr10/jaimelr10.github.io",
@@ -60,7 +66,7 @@ export default function Projects() {
     {
       title: "Financial Calculator",
       description: "Useful financial calculator to process several financial metrics. In progress. 👷",
-      image: "/financialCalculator.png?height=400&width=600",
+      image: FinancialCalculator,
       tags: ["Java", "SpringBoot", "REST APIs", "React", "Tailwind CSS", "TypeScript"],
       demoUrl: "https://github.com/jaimelr10/FinancialCalculator",
       githubUrl: "https://github.com/jaimelr10/FinancialCalculator",
