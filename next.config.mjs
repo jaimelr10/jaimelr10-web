@@ -11,6 +11,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/jaimelr10.github.io/' : '',
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
