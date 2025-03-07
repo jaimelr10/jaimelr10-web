@@ -25,7 +25,7 @@ export default function Projects() {
     {
       title: "Liferay",
       description: "Contributions to the open-source repo of the DXP Platform.",
-      image: "/liferayLogo.png?height=400&width=600",
+      image: "/LiferayLogo.png?height=400&width=600",
       tags: ["Java", "JSP", "REST API Infrastructure", "React", "Playwright"],
       demoUrl: "https://www.liferay.com/es/",
       githubUrl: "https://github.com/jaimelr10/liferay-portal",
