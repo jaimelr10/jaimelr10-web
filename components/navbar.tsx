@@ -80,7 +80,7 @@ export default function Navbar() {
                 {item}
               </a>
             ))}
-            <Button className="mobile-menu mt-2 w-full">Resume</Button>
+            {/* <Button className="mobile-menu mt-2 w-full">Resume</Button> */}
           </div>
         )}
       </div>
